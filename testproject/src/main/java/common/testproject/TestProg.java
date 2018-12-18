@@ -1,4 +1,4 @@
-package cisco.main;
+package common.testproject;
 
 public class TestProg {
 
