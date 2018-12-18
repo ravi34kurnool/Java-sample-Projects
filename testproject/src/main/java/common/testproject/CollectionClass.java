@@ -21,7 +21,7 @@ public class CollectionClass {
 	
 	public static void readFile() throws IOException{
 		    // pass the path to the file as a parameter
-		    FileReader fr =   new FileReader("C:\\Users\\rmummadu\\Desktop\\LOG\\commd_ids.txt");
+		    FileReader fr =   new FileReader("C:\\Users\\ravi\\Desktop\\LOG\\commd_ids.txt");
 		    int i;
 		    List<Integer> list = new ArrayList<Integer>(11000);
 		    String str = "";
@@ -53,7 +53,7 @@ public class CollectionClass {
         }
         FileOutputStream outputStream = null;
         try {
-        	outputStream = new FileOutputStream("C:\\Users\\rmummadu\\Desktop\\JavaBook.xlsx");
+        	outputStream = new FileOutputStream("C:\\Users\\ravi\\Desktop\\JavaBook.xlsx");
             workbook.write(outputStream);
             System.out.println("Exported all data..");
         }catch(Exception e){
