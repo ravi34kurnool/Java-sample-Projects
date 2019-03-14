@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+
+        <appender name="rolling.log.file"
+                class="org.apache.log4j.RollingFileAppender">
+                <param name="file" value="C:/git_Tomcat_server/apache-tomcat-8.5.15/logs/ciscoafm.log" />
+                <param name="append" value="true" />
+                <param name="bufferedIO" value="false" />
+                <param name="maxBackupIndex" value="20" />
+                <param name="maxFileSize" value="10MB" />
+                <layout class="org.apache.log4j.PatternLayout">
+                        <param name="ConversionPattern"
+                                value="%d{yyyy-MM-dd HH:mm:ss,SSS} %-5p [%-10t%x] %-50.50c{1}%M %m%n" />
+                </layout>
+        </appender>
+
+        <root>
+                <level value="info" />
+                <appender-ref ref="rolling.log.file" />
+
+        </root>
+</log4j:configuration>
